@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Study Partner</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Inline CSS styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .container {
+            background: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            border-color: #6a11cb;
+            outline: none;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background: #6a11cb;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-group button:hover {
+            background: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register to Find a Study Partner</h1>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="instagram_id">Instagram ID:</label>
+                <input type="text" id="instagram_id" name="instagram_id" required>
+            </div>
+            <div class="form-group">
+                <label for="registration_number">Registration Number:</label>
+                <input type="text" id="registration_number" name="registration_number" required>
+            </div>
+            <div class="form-group">
+                <label for="professional_year">Professional Year:</label>
+                <select id="professional_year" name="professional_year" required>
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                    <option value="4th">4th</option>
+                    <option value="intern">Intern</option>
+                    <option value="graduate">Graduate</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="course_interested_in">Course Interested In:</label>
+                <select id="course_interested_in" name="course_interested_in" required>
+                    <option value="1st Proff">1st Proff</option>
+                    <option value="2nd Proff">2nd Proff</option>
+                    <option value="3rd Proff">3rd Proff</option>
+                    <option value="4th Proff">4th Proff</option>
+                    <option value="NEET PG">NEET PG</option>
+                    <option value="NEXT">NEXT</option>
+                    <option value="USMLE Step 1">USMLE Step 1</option>
+                    <option value="USMLE Step 2">USMLE Step 2</option>
+                    <option value="PLAB">PLAB</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="preferred_gender">Preferred Gender of Partner:</label>
+                <select id="preferred_gender" name="preferred_gender" required>
+                    <option value="Any">Any</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

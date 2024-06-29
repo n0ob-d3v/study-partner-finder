@@ -1,0 +1,37 @@
+/* css/styles.css */
+
+body {
+    /* CSS styles for the body */
+}
+
+.container {
+    /* CSS styles for the container */
+}
+
+.container h1 {
+    /* CSS styles for the heading inside container */
+}
+
+.form-group {
+    /* CSS styles for form groups */
+}
+
+.form-group label {
+    /* CSS styles for labels */
+}
+
+.form-group input, .form-group select {
+    /* CSS styles for input fields and select dropdowns */
+}
+
+.form-group input:focus, .form-group select:focus {
+    /* CSS styles for input fields and select dropdowns when focused */
+}
+
+.form-group button {
+    /* CSS styles for submit button */
+}
+
+.form-group button:hover {
+    /* CSS styles for submit button on hover */
+}
